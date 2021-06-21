@@ -18,16 +18,16 @@ img {
 :root {
   --header-height: 4.5rem;
 
-  /* colors */
-  --hue: 159;
   /* HSL color mode */
-  --base-color: #ffffff;
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: #f67797;
+  --base-color-second: #cc6c84;
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: #ff3366;
-  --text-color: #000000;
+  --text-color: hsl(0, 4%, 20%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: #ffffff;
+  --divder-color: hsl(346, 37%, 24%);
+  --divder-color1: hsla(355, 76%, 33%, 0.34);
 }
 
 /* Base */
@@ -44,21 +44,127 @@ h1 {
   -webkit-font-smoothing: auto;
 }
 
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  height: 3.5rem;
+  display: inline-block;
+  display: inline-flex;
+  padding: 0 2rem;
+  align-items: center;
+  border-radius: 0.25rem;
+  font: 500 1rem 'DM Sans', sans-serif;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--title-color);
+}
+
+.divder_1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    var(--divder-color) 0%,
+    var(--divder-color1) 100%
+  );
+}
+
 /* Layout */
 
-#header {
-}
-nav {
-  height: 4.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .container {
-  width: 100%;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+#header {
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 2rem;
+  display: flex;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--body-color);
+}
+nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font: 700 1.31rem 'Poppins' sans-serif;
+  color: var(--text-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
 /* Home */
+
+#home {
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 0;
+}
+
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  /* Maiky colocou top:-16.8%; e left:16.8%; */
+  top: -16.8%;
+  left: 16.8%;
+  z-index: 0;
+}
+
+#home .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
