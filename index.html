@@ -7,7 +7,12 @@
     <title>SandraCakes</title>
 
     <link rel="stylesheet" href="ico/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
+
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -123,15 +128,99 @@
         </div>
       </section>
 
+      <div class="divder_1"></div>
+
       <section class="section" id="testimonials">
-        <div class="container grid">Depoimentos</div>
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já provou o melhor bolo</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae ullam nostrum, nisi molestiae magnam minus
+                    eligendi ad dolor.
+                  </p>
+                  <cite>
+                    <img src="image/p3.jpg" alt="Wanessa Rocha" />Wanessa
+                    Rocha</cite
+                  >
+                </blockquote>
+              </div>
+
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae ullam nostrum, nisi molestiae magnam minus
+                    eligendi ad dolor.
+                  </p>
+                  <cite
+                    ><img src="image/p2.jpg" alt="Luciana Matos" />Luciana
+                    Matos</cite
+                  >
+                </blockquote>
+              </div>
+
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae ullam nostrum, nisi molestiae magnam minus
+                    eligendi ad dolor.
+                  </p>
+                  <cite
+                    ><img src="image/p1.jpg" alt="Rachel Silva" />Rachel
+                    Silva</cite
+                  >
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
+
+      <div class="divder_2"></div>
 
       <section class="section" id="contact">
-        <div class="container grid">Contato</div>
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Faça sua encomenda</h2>
+            <p>
+              Faça sua encomenda com a SandraCakes, e prove o melhor bolo, feito
+              com amor e carinho.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+55719999900008&text=Oi, gostaria de realizar uma encomenda."
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-mobile"></i>71 99999-0000</li>
+              <li>
+                <i class="icon-location2"></i>Pelourinho, Salvador - BA,
+                40301-110
+              </li>
+              <li><i class="icon-mail2"></i>Sandracakes@gmail.com</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>
