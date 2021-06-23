@@ -6,7 +6,9 @@
 
     <title>SandraCakes</title>
 
+    <link rel="stylesheet" href="ico/style.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,7 +20,17 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">Sandra<span>Cakes.</span></a>
-        <div class="menu">...menu</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-eye"></div>
+        <div class="toggle icon-eye-blocked"></div>
       </nav>
     </header>
     <main>
@@ -28,7 +40,7 @@
             <img src="image/img3.jpg" alt="making cake" />
           </div>
           <div class="text">
-            <h1>Aqui tudo é feito com carinho e amor</h1>
+            <h2 class="title">Aqui tudo é feito com carinho e amor</h2>
             <p>
               Quando pensar em bolo, fala com a Sandra, aqui temos os melhores
               sabores e cada pedido é especial.
@@ -40,9 +52,86 @@
 
       <div class="divder_1"></div>
 
-      <section class="section">
-        <div class="container">Container</div>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="image/img1.jpg" alt="sobre nós" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in
+              fuga itaque, tenetur suscipit similique, error rerum explicabo
+              eveniet dolores quas illum ad animi, laborum accusamus
+              necessitatibus ipsum soluta impedit?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              perspiciatis tempore delectus eum natus possimus nam quae tempora
+              error rerum consequatur, excepturi veritatis perferendis laborum!
+              Aut obcaecati similique mollitia consectetur.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              aperiam animi laborum delectus, corporis earum! Eum quidem,
+              reiciendis ex, ea veniam delectus eos modi repellat consectetur,
+              atque provident illo doloribus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divder_2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços Diferenciais</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              nisi rerum <strong>SandraCakes!</strong>
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-credit-card"></i>
+              <h3 class="title">Pagamento</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                in fuga itaque, tenetur suscipit similique.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-earth"></i>
+              <h3 class="title">Delivery</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                in fuga itaque, tenetur suscipit similique.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-gift"></i>
+              <h3 class="title">Festa</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                in fuga itaque, tenetur suscipit similique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container grid">Depoimentos</div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container grid">Contato</div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
